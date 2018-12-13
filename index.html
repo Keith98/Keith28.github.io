@@ -1,42 +1,58 @@
 <!DOCTYPE html>
+<html>
 
-<html lang="en”>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Basic Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<title>HANGMAN!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Sigmar+One|Special+Elite" rel="stylesheet">
 </head>
+
 <body>
-<div class="row" id="header">
-    <div class="col-4" id="brand">
-        <h1>Keith Roland</h1>
-    </div>
-    <div class="col-8" id="nav">
-        <a href="index.html"><span>About</span></a>
-        <span>|</span>
-        <a href="contact.html"><span>Contact</span></a>
-        <span>|</span>
-        <a href="portfolio.html"><span>Portfolio</span></a>      
-    </div>
-</div>
-<div class="row">
-    <div class="col-8">
-        <div id="about">
-            <h2>About Me</h2>
-            <hr>
-            <img src="assets/images/Stack Overflow Resize.jpg" height="200"/> 
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            </p>
-            <p>
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p> 
-        </div>
-    
+
+	<div class="container">
+		<div class="jumbotron text-center">
+			<h1>HANGMAN!
+				<br>
+				<small>Let's guess some video games characters!</small>
+			</h1>
+		</div>
+
+		<div class="row center-block match-my-cols">
+			<div class="col-xs-12 col-md-8 text-center left">
+				<h2 id="letsPlay">Press any key to get started!</h2>
+				<h3>Current word:</h3>
+				<div id="currentWord"></div>
+				<br>
+				<div class="row">
+						<div class="col-xs-12 col-md-6">
+								<h3>Letters Guessed:</h3>
+								<div id="lettersGuessed">--</div>
+							</div>
+					<div class="col-xs-12 col-md-6">
+						<h3>Guesses Left:</h3>
+						<div id="guessesLeft">--</div>
+					</div>	
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<h3>Number of Wins:</h3>
+						<div id="wins">0</div>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<h3>Number of Losses:</h3>
+						<div id="losses">0</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4 right">
+				<img class="center-block" src="2018-12-12-15-32-16.png" alt="Video Game characters!" width="100%" height="100%">
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
